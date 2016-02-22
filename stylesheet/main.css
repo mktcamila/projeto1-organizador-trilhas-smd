@@ -1,0 +1,114 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: AceR;
+    src: url("../fonts/Ace Records.ttf");
+} 
+@font-face {
+    font-family: iforces;
+    src: url("../fonts/iforces.ttf");
+} 
+header{
+	text-align:center;
+	background-image:url("../img/textura.jpg");
+	-webkit-filter: grayscale(55%);
+	-moz-filter: grayscale(55%);
+	-o-filter: grayscale(55%);
+	-ms-filter: grayscale(55%);
+	filter: grayscale(55%);
+	
+	font-family:AceR;
+	font-size:30px;
+}
+body, header, article, footer, h1, h2, h3, h4, h5, a {
+	padding:2px;
+	margin:2px;
+}
+body{
+	background-color:#fff;
+	background-image:url("../img/textureColor.jpg");
+}
+aside{
+	position:fixed;
+	padding:2px;
+	margin:2px;
+
+	margin-left:5%;
+	width:12%;
+	
+	border-radius: 25px;
+	background-color:rgba(240, 240, 240, 0.4);
+	float:left;
+}
+section{
+	margin-left:18%;
+	background-color:#dff;
+	width:68%;
+}
+footer, nav{
+	background-color:rgba(240, 240, 240, 0.4);
+	text-align:center;
+	font-family: "Liberations Sans", "Arial";
+	padding:4px;
+}
+.creature_font{
+	font-family: iforces;
+	font-size: large;
+}
+article.impar{
+	background-color:#eee;
+}
+article.par{
+	background-color:#fff;
+}
+li{
+	margin:2px;
+	margin-bottom:5px;
+}
+a{
+	text-decoration: none;
+	display:inline;
+}
+a:hover{
+	color:#00f;
+	text-decoration: underline;
+}
+a:visited{
+	color:#000;
+}
+a:active{
+	color:#000;
+}
+.content{
+	float:left;
+	width:calc( - 104px);
+}
+.subtitle{
+	clear:both;
+}
+
+.menu_title{
+	font-weight: bold;
+	text-decoration: underline;
+	padding:2px;
+	border-bottom:1px solid #000;
+}
+.menu_item{
+	margin:2px;
+	display:block;
+}
+.icon{
+	height:40px;
+	float:left;
+}
+
+#banner{
+	margin-top:40px;
+	margin-left:18%;
+	float:left;
+}
+
+#banner_img{
+	margin-left:calc(20% - 100px);
+	position:relative;   
+}

@@ -1,0 +1,336 @@
+#tabs{
+	width:800px;
+	height: 600px;
+}
+.draggable { 
+    float: left; 
+    margin: 10px 10px 10px 0; 
+}
+#droppable { 
+    width: 300px; 
+    height: 600px; 
+    border: solid; 
+    right: 40px; 
+    top: 0px; 
+    float:right; 
+    position: absolute; 
+}
+#div_pool{
+    float: left;
+    left: 160px;
+    top: 240px;
+    position: relative;
+    width: 570px;
+    height: 100px;
+ }
+
+.cadeira_ob{
+    width: 112px;
+  	height: 75px;
+  	float:left;
+    background-color: #bacbe5;
+    border: black 1px solid;  
+}
+
+ .cadeira_ele {
+     width: 112px;
+  	height: 75px;
+  	float:left;
+    background-color: #d5e3bf;
+    border: black 1px solid;
+  } 
+
+  .cadeira_opc{
+     width: 112px;
+  	height: 75px;
+  	float:left;
+    background-color: #cdbfd8;
+    border: black 1px solid;
+  } 
+
+.texto_cadeira{
+    font-family: arial;
+    font-size: 16px;
+    text-align: center;
+    line-height: 100%;
+    vertical-align: middle;
+
+	}	
+
+/* abas obrigatorias, eletivas e optativas */
+
+#aba_ob{
+    width: 15%;
+    height: 30px;
+    position: absolute;
+    left: 23%;
+    top: 200px;
+    border-radius: 10px 10px 0px 0px;
+   
+}
+
+ #aba_ele{
+     width: 15%;
+     height: 30px;
+     position: absolute;
+     left: 38%;
+     top: 200px;
+     border-radius: 10px 10px 0px 0px;
+}
+
+ #aba_opc{
+     width: 15%;
+     height: 30px;   
+     position: absolute;
+     left: 53%;
+     top: 200px;
+     border-radius: 10px 10px 0px 0px;
+}
+
+p.texto_aba {
+    text-align: center;
+    line-height: 20%;
+    font-family: arial;
+    font-size: 12pt;
+}
+
+/* fim abas obrigatorias, eletivas e optativas e caixa de destino */
+
+/* abas cursadas e pretendidas */
+#aba_cursadas{
+    width: 12%;
+    height: 30px;
+    position: relative;
+    float: left;
+    left: 195px;
+    top: 150px;
+    text-align: center;
+    line-height: 20%;
+    font-family: arial;
+    font-size: 12pt;
+    border-radius: 10px 10px 0px 0px;
+}
+#aba_pretendidas{
+    width: 12%;
+    height: 30px;
+    position: relative;
+    float: left;
+    left: 195px;
+    top: 150px;
+    text-align: center;
+    line-height: 20%;
+    font-family: arial;
+    font-size: 12pt;
+    border-radius: 10px 10px 0px 0px;
+    
+}
+
+#destino_disc{
+  	border: dashed;
+  	width: 300px;
+  	height: 400px;
+  	position: absolute;
+  	left: 900px;
+  	top: 185px;
+    overflow: scroll;
+
+  	}
+/* fim abas cursadas e pretendidas e caixa de destino */
+
+ 
+ #progressbar1{
+  position: absolute;
+  left:10px;
+  top:100px;
+  width: 200px;
+  height:30px;
+ }
+ #progressbar2{
+  position: absolute;
+  left:10px;
+  top:170px;
+    width: 200px;
+  height:30px;
+ }
+ #progressbar3{
+  position: absolute;
+  left:10px;
+  top:240px;
+    width: 200px;
+  height:30px;
+ }
+ #progressbar4{
+  position: absolute;
+  left:10px;
+  top:310px;
+  width: 200px;
+  height:30px;
+ }
+
+ #l1{
+  position: absolute;
+  left:10px;
+  top:80px;
+  width: 200px;
+  height:30px;
+ }
+
+ #l2{
+  position: absolute;
+  left:10px;
+  top:150px;
+    width: 200px;
+  height:30px;
+ }
+
+ #l3{
+  position: absolute;
+  left:10px;
+  top:220px;
+    width: 200px;
+  height:30px;
+ }
+#l4{
+  position: absolute;
+  left:10px;
+  top:290px;
+  width: 200px;
+  height:30px;
+ }
+
+imagem_status{
+    position: relative;
+    left: 10%;
+    top: 10px;
+    padding: 0px 0px 0px 0px;
+}
+ #status1{
+  position: absolute;
+  width:100px;
+  height: 100px;
+  left:300px;
+  top:400px;
+ }
+
+ #status2{
+  position: absolute;
+  width:100px;
+  height: 100px;
+  left:400px;
+  top:400px;
+ }
+
+ #status3{
+  position: absolute;
+  width:100px;
+  height: 100px;
+  left:500px;
+  top:400px;
+}
+
+#status4{
+  position: absolute;
+  width:100px;
+  height: 100px;
+  left:600px;
+  top:400px;
+}
+
+#status5{
+  position: absolute;
+  width:100px;
+  height: 100px;
+  left:700px;
+  top:400px;
+
+}
+img{
+  width: 100px;
+  height: 100px;
+}
+
+.pesquisa {
+    float: left;
+    left: 58%;
+    top: 150px;
+    position: relative;
+    font-family: arial;
+    font-size: 12px;
+}
+
+span.microfiche-controls {
+    top: 20px;
+    position: relative;
+}  
+
+.titulo1 {
+    width: 90px;
+    height: 90px;
+    top: 400px;
+    left: 400px;
+    position: relative;
+    text-align: center;
+    font-family: arial;
+    font-size: 12px;
+    color: #27793b;
+    font-weight: bold;
+}
+
+.titulo2 {
+    width: 90px;
+    height: 90px;
+    top: 387px;
+    left: 297px;
+    position: relative;
+    text-align: center;
+    font-family: arial;
+    font-size: 12px;
+    color: #003366;
+    font-weight: bold;
+}
+
+.titulo3 {
+    width: 90px;
+    height: 90px;
+    top: 291px;
+    left: 700px;
+    position: relative;
+    text-align: center;
+    font-family: arial;
+    font-size: 12px;
+    color: #ebb04c;
+    font-weight: bold;
+    
+}
+
+.titulo4 {
+    width: 90px;
+    height: 90px;
+    top: 183px;
+    left: 500px;
+    position: relative;
+    text-align: center;
+    font-family: arial;
+    font-size: 12px;
+    color: #8a3298;
+    font-weight: bold;
+}
+
+.titulo5 {
+    width: 90px;
+    height: 90px;
+    top: 88px;
+    left: 600px;
+    position: relative;
+    text-align: center;
+    font-family: arial;
+    font-size: 12px;
+    color: #e61818;
+    font-weight: bold;
+   
+}
+
+
+
+
+

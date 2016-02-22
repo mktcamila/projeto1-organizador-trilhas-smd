@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+	<head>
+		<meta charset="utf-8"/>
+
+		<title>
+			Trilhas SMD
+		</title>
+		<link rel="stylesheet" href="stylesheet/main.css" />
+		<link rel="stylesheet" href="stylesheet/jquery-ui.min.css" />
+		<link rel="stylesheet" href="stylesheet/jquery-ui.structure.min.css" />
+		<link rel="stylesheet" href="stylesheet/jquery-ui.theme.min.css" />
+		<link rel="stylesheet" href="css/style.css" />
+		<script src="js/jquery.js"></script>
+		<script src="js/jquery-ui.min.js"></script>
+		<script src="js/microfiche.js"></script>
+		<script src="js/smd.js"></script>
+		<style>
+  		.draggable { width: 150px; height: 89px}
+  		</style>
+	</head>
+	<body>
+	<div class="pesquisa">
+  		    <!--<label for="tags">Pesquisar:	 </label> -->
+		    <input id="tags" class="ui-autocomplete-input" autocomplete="off"  value="Buscar disciplinas...">
+    </div>
+	
+	<div id="aba_ob">
+	    <p class="texto_aba">Obrigatórias</p>
+	</div>
+	<div id="aba_ele">
+	    <p class="texto_aba">Eletivas</p>
+	</div>
+	<div id="aba_opc">
+	    <p class="texto_aba">Optativas</p>
+	</div>
+	
+	<div id="div_pool" class="div_teste">
+		<div id="intro" class="cadeira_ob trilha1">
+			<p class="texto_cadeira">Intro SMD</p>
+		</div>
+		<div id='hist_design' class="cadeira_ob trilha2">
+			<p class="texto_cadeira">H. do Design</p>
+		</div>
+		<div id='aut_mult1' class="cadeira_ob trilha1 trilha2">
+			<p class="texto_cadeira">Aut. Mult.</p>
+		</div>
+		<div id='prog1' class="cadeira_ob trilha1 trilha3">
+			<p class="texto_cadeira">Prog I</p>
+		</div>
+		<div id='desenho1' class="cadeira_ob trilha2 trilha3">
+			<p class="texto_cadeira">Des I</p>
+		</div>
+		<div id='cognicao' class="cadeira_ob trilha1">
+			<p class="texto_cadeira">Cognição</p>
+		</div>
+		<div id='mami' class="cadeira_ob trilha3 trilha5">
+			<p class="texto_cadeira">MAMI</p>
+		</div>
+		<div id='vc1' class="cadeira_ob">
+			<p class="texto_cadeira">C. Visual I</p>
+		</div>
+		<div id='prog2' contenteditable=""class="cadeira_ob trilha2 trilha5">
+			<p class="texto_cadeira">Prog II</p>
+		</div>
+		<div id='narrativas' class="cadeira_ob trilha5">
+			<p class="texto_cadeira">Narrativas</p>
+		</div>
+		<div id='ihc'class="cadeira_ob trilha1">
+			<p class="texto_cadeira">IHC</p>
+		</div>
+		<div id='int_cib' class="cadeira_ob trilha3">
+			<p class="texto_cadeira">Int. Cibercultura</p>
+		</div>
+		<div id='aut_mult2'class="cadeira_ob trilha2 trilha4">
+			<p class="texto_cadeira">Autoração II</p>
+		</div>
+		<div id='dig'class="cadeira_ob trilha3">
+			<p class="texto_cadeira">DIG</p>
+		</div>
+		<div id='projeto1' class="cadeira_ob trilha2">
+			<p class="texto_cadeira">Projeto I</p>
+		</div>
+		<div id='met_pesquisa' class="cadeira_ob trilha5">
+			<p class="texto_cadeira">Met. Pesquisa</p>
+		</div>
+		
+		<div id='analise_s'class="cadeira_ele trilha1 trilha2">
+		<p class="texto_cadeira">Analise Sistemas</p>
+		</div>
+		<div id='est_dados'class="cadeira_ele trilha2 trilha5">
+			<p class="texto_cadeira">Est. de Dados</p>
+		</div>
+		<div id='redes'class="cadeira_ele trilha3 trilha5">
+			<p class="texto_cadeira">Redes</p>
+		</div>
+		<div id='desenho2'class="cadeira_ele trilha1 trilha2">
+			<p class="texto_cadeira">Desenho II</p>
+		</div>
+		<div id='foto_digital'class="cadeira_ele trilha1">
+			<p class="texto_cadeira">Fotog. Digital</p>
+		</div>
+		<div id='semiotica' class="cadeira_ele trilha2">
+			<p class="texto_cadeira">Semiótica Aplic.</p>
+		</div>
+		<div id='eng_software'class="cadeira_ele">
+			<p class="texto_cadeira trilha3">Eng. Software</p>
+		</div>
+		<div id='banco_dados' class="cadeira_ele">
+			<p class="texto_cadeira trilha5">B de Dados</p>
+		</div>
+		<div id='cv2' class="cadeira_ele trilha3">
+			<p class="texto_cadeira">Com. Visual II</p>
+		</div>
+		<div id='design_som' class="cadeira_ele trilha5">
+			<p class="texto_cadeira">Design de Som</p>
+		</div>
+
+		<div class="cadeira_opc trilha1">
+		<p class="texto_cadeira">Álgebra</p>
+		</div>
+		<div class="cadeira_opc trilha2">
+		<p class="texto_cadeira">Amb. Virt. Aprend.</p>
+		</div>
+		<div class="cadeira_opc trilha3">
+		<p class="texto_cadeira">B Dados II</p>
+		</div>
+		<div class="cadeira_opc trilha4">
+		<p class="texto_cadeira">Com. Novas Mídias</p>
+		</div>
+		<div class="cadeira_opc trilha5">
+		<p class="texto_cadeira">C. C. e Personagens</p>
+		</div>
+		<div class="cadeira_opc trilha1">
+		<p class="texto_cadeira">Comp. Gráfica</p>
+		</div>
+		<div class="cadeira_opc trilha2">
+		<p class="texto_cadeira">Cult. de Jogos</p>
+		</div>
+		<div class="cadeira_opc trilha3">
+		<p class="texto_cadeira">Des. Aplic. Distrib.</p>
+		</div>
+		<div class="cadeira_opc trilha4">
+		<p class="texto_cadeira">Des. Jogos Casuais</p>
+		</div>
+		<div class="cadeira_opc trilha5">
+		<p class="texto_cadeira">Des. Mot. Gráficos</p>
+		</div>
+		<div class="cadeira_opc trilha1">
+		<p class="texto_cadeira">Design Jogos D.</p>
+		</div>
+		<div class="cadeira_opc trilha2">
+		<p class="texto_cadeira">Design Institucional</p>
+		</div>
+		<div class="cadeira_opc trilha3">
+		<p class="texto_cadeira">Edição Audiovisual</p>
+		</div>
+		<div class="cadeira_opc trilha4">
+		<p class="texto_cadeira">Educomunicação</p>
+		</div>
+		<div class="cadeira_opc trilha5">
+		<p class="texto_cadeira">Exp.em Multimídia I</p>
+		</div>
+		<div class="cadeira_opc trilha1">
+		<p class="texto_cadeira">Exp. em Tipografia D.</p>
+		</div>
+		<div class="cadeira_opc trilha2">
+		<p class="texto_cadeira">Fer. de Modelagem Trid. I</p>
+		</div>
+		<div class="cadeira_opc trilha3">
+		<p class="texto_cadeira">Filosofia da Tecnologia</p>
+		</div>
+		<div class="cadeira_opc trilha4">
+		<p class="texto_cadeira">Frameworks de Software</p>
+		</div>
+		<div class="cadeira_opc trilha5">
+		<p class="texto_cadeira">Fund. Mater. Didatico oara EAD</p>
+		</div>
+
+		
+	</div>
+	<div id="aba_cursadas">
+	<p id="texto_aba_cursadas">Cursadas</p>
+	</div>
+	
+	<div id="aba_pretendidas">
+	<p id="texto_aba_pretendidas">Pretendidas</p>
+	</div>
+	
+	<div>
+	<div id="destino_disc">
+	</div>
+	<div class="sta">
+	<div id='status1'>
+		<img class="imagem_status"src="img/azul0.png">
+	</div>
+	<div id='status2'>
+		<img class="imagem_status"src="img/verde0.png">
+	</div>
+	<div id='status3'>
+		<img class="imagem_status"src="img/lilas0.png">
+	</div>
+	<div id='status4'>
+		<img class="imagem_status"src="img/vermelho0.png">
+	</div>
+	<div id='status5'>
+		<img class="imagem_status"src="img/amarelo0.png">
+	</div>	
+	</div>
+	
+	<div class="titulo1">
+	    <p>Programação para Jogos</p>
+	</div>
+	<div class="titulo2">
+	    <p>Desenvolvimento WEB</p>
+	</div>
+	<div class="titulo3">
+	    <p>Audiovisual</p>
+	</div>
+	<div class="titulo4">
+	    <p>Desing Multimídia</p>
+	</div>
+    <div class="titulo5">
+	    <p>Animação</p>
+	</div>
+	
+<script>
+
+</script>
+	
+
+	</body>
+	
+</html>
